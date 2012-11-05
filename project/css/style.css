@@ -50,13 +50,13 @@ table {
 
 a {
     text-decoration:none;
-    color:#07B;
+    color:#009100;
 }
 
 a:hover,
 a:focus {
     text-decoration:underline;
-    color:#36B;
+    opacity:0.8;
 }
 
 /* Globalne */
@@ -101,6 +101,7 @@ h6 {
 
 p, ul, ol {
     margin:0 0 1.5em;
+    text-align:justify;
 }
 
 blockquote {}
@@ -124,20 +125,20 @@ small {
 }
 
 .main_content {
-    width:600px;
-    margin-right:30px;
+    width:560px;
+    padding:20px 30px;
     float:left;
 }
 
 .sidebar {
     width:300px;
-    padding:20px 20px 20px 0;
+    padding:30px 30px 20px 0;
     float:right;
 }
 
 .footer {
     clear:both;
-    margin:15px 0 0;
+    margin:0;
     padding:15px 20px;
     font-size:13px;
     border-top:1px solid #999;
@@ -152,14 +153,239 @@ small {
 
 /* Top strony */
 
+.top .header {
+    padding:20px;
+    float:left;
+}
+
+
+/* Wyszukiwarka */
+
+.top .search_form {
+    margin-top:30px;
+    margin-right:30px;
+    float:right;
+}
+
+.top .search_form input[type="text"] {
+    border: 1px solid #999;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    outline: none;
+    padding: 5px 6px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.1s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.1s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.1s;
+    transition: border linear 0.2s, box-shadow linear 0.1s;
+}
+
+.top .search_form input[type="text"]:focus {
+    border-color: rgba(0, 145, 0, 1);
+    outline: 0;
+    outline: thin dotted \9;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 145, 0, 0.6);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 145, 0, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 145, 0, 0.6);
+}
+
+.top .search_form input[type="submit"] {
+    background:#009100;
+    border:0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    color:#fff;
+    font-size:13px;
+    padding:6px 16px;
+    cursor:pointer;
+}
+
+.top .search_form input[type="submit"]:hover,
+.top .search_form input[type="submit"]:focus {
+    opacity:0.9;
+}
+
+
+/* Rozwijane menu - autor: Valeriu Timbuc
+via: http://designmodo.com/css3-dropdown-menu/ */
+
+.top .menu {
+    position:relative;
+    z-index:10;
+    clear:both;
+    height: 40px;
+    margin:0;
+    background: #4c4e5a;
+    background: -webkit-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+    background: -moz-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+    background: -o-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+    background: -ms-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+    background: linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+}
+
+.top .menu li {
+    position: relative;
+    list-style: none;
+    float: left;
+    display: block;
+    height: 40px;
+}
+
+.top .menu li a {
+    display: block;
+    padding: 0 14px;
+    margin: 6px 0;
+    line-height: 28px;
+    text-decoration: none;
+    border-left: 1px solid #393942;
+    border-right: 1px solid #4f5058;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: #f3f3f3;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+
+.top .menu li:first-child a {
+    border-left: none;
+}
+
+.top .menu li:last-child a {
+    border-right: none;
+}
+
+.top .menu li:hover > a {
+    color: #bbb;
+}
+
+.top .menu ul {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    opacity: 0;
+    background: #1f2024;
+    -webkit-transition: opacity .25s ease .1s;
+    -moz-transition: opacity .25s ease .1s;
+    -o-transition: opacity .25s ease .1s;
+    -ms-transition: opacity .25s ease .1s;
+    transition: opacity .25s ease .1s;
+}
+
+.top .menu li:hover > ul {
+    opacity: 1;
+}
+
+.top .menu ul li {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    -webkit-transition: height .25s ease .1s;
+    -moz-transition: height .25s ease .1s;
+    -o-transition: height .25s ease .1s;
+    -ms-transition: height .25s ease .1s;
+    transition: height .25s ease .1s;
+}
+
+.top .menu li:hover > ul li {
+    height: 36px;
+    overflow: visible;
+    padding: 0;
+}
+
+.top .menu ul li a {
+    width: 200px;
+    padding: 4px 0 4px 10px;
+    margin: 0;
+    border: none;
+    border-bottom: 1px solid #353539;
+}
+
+.top .menu ul li:last-child a {
+    border: none;
+}
+
+.top .menu ul ul {
+    position:absolute;
+    left:210px;
+    top:0;
+    border-left:1px solid #353539;
+}
+
 /* Nagłówek z obrazkiem */
 
 .header_img {
+    position:relative;
     height:250px;
+}
+
+/* Artykuł */
+
+.post {
+    border-bottom:1px solid #ededed;
+    padding-bottom:10px;
+    margin-bottom:30px;
+}
+
+.post .title {
+    margin-bottom:10px;
+}
+
+.post .metadata {
+    display:block;
+    padding-bottom:15px;
+}
+
+/* Nawigacja */
+
+.navigation {
+    overflow:auto;
+}
+
+.navigation .left {
+    float:left;
+}
+
+.navigation .right {
+    float:right;
 }
 
 /* Widżety paska bocznego */
 
 .widget {
     background:#ededed;
+    padding:20px;
+    margin-bottom:30px;
+}
+
+.widget ul {
+    margin:0;
+    padding:0;
+}
+
+.widget .name {
+    margin-bottom:20px;
+}
+
+/* Widżety paska dolnego */
+
+.bottom_bar {
+    clear:both;
+    background:#ededed;
+    overflow:auto;
+}
+
+.bottom_bar .widget {
+    width:240px;
+    float:left;
+    margin-left:30px;
 }

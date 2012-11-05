@@ -21,36 +21,36 @@
             <div class="search_form">
                 <form action="">
                     <fieldset>
-                        <input type="text" value="szukane słowo">
+                        <input type="text" placeholder="szukane słowo">
                         <input type="submit" value="Szukaj!">
                     </fieldset>
                 </form>
             </div>
 
-            <div class="top_menu">
-                <ul>
-                    <li class="selected"><a href="#">Główna</a></li>
+            <menu>
+                <ul class="menu" id="js_menu">
+                    <li><a href="#">Główna</a></li>
                     <li><a href="#">Kategorie bloga</a>
                         <ul>
-                            <li><a href="#">Internet</a> (20)
+                            <li><a href="#">Internet</a>
                                 <ul>
-                                    <li><a href="#">Aktualności</a> (12)</li>
-                                    <li><a href="#">Ciekawostki</a> (4)</li>
-                                    <li><a href="#">Informacje prasowe</a> (6)</li>
+                                    <li><a href="#">Aktualności</a></li>
+                                    <li><a href="#">Ciekawostki</a></li>
+                                    <li><a href="#">Informacje prasowe</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Społeczeństwo</a> (32)</li>
-                            <li><a href="#">Muzyka</a> (21)</li>
-                            <li><a href="#">Literatura</a> (9)</li>
+                            <li><a href="#">Społeczeństwo</a></li>
+                            <li><a href="#">Muzyka</a></li>
+                            <li><a href="#">Literatura</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Archiwum miesięczne</a>
                         <ul>
-                            <li><a href="#">Listopad 2012</a> (32)</li>
-                            <li><a href="#">Październik 2012</a> (21)</li>
-                            <li><a href="#">Wrzesień 2012</a> (9)</li>
-                            <li><a href="#">Sierpień 2012</a> (2)</li>
-                            <li><a href="#">Lipiec 2012</a> (6)</li>
+                            <li><a href="#">Listopad 2012</a></li>
+                            <li><a href="#">Październik 2012</a></li>
+                            <li><a href="#">Wrzesień 2012</a></li>
+                            <li><a href="#">Sierpień 2012</a></li>
+                            <li><a href="#">Lipiec 2012</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Zagnieżdżone podstrony</a>
@@ -68,7 +68,7 @@
                     </li>
                     <li><a href="#">Link zewnętrzny</a></li>
                 </ul>
-            </div>
+            </menu>
 
             <div class="header_img">
                 <img src="img/header_img.jpg" height="250" width="960" alt="">
@@ -81,120 +81,125 @@
 
                 <article class="post">
                     <header>
-                        <h2><a href="#" title="">Tytuł wpisu</a> <a href="#" class="comment_count">Komentarze (4)</a></h2>
-                        <span class="metadata">
-                            21 marca 2012 @ <a href="#">Społeczeństwo</a>, <a href="#">Ciekawostki</a>. <a href="#">Edytuj</a>
-                        </span>
+                        <h2 class="title"><a href="#" title="">Tytuł wpisu</a></h2>
+                        <small class="metadata">
+                            21 marca 2012 | <a href="#">Społeczeństwo</a>, <a href="#">Ciekawostki</a> | <a href="#">Komentarze (0)</a>
+                        </small>
                     </header>
                     <div class="content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum enim quis turpis hendrerit in lobortis ligula ornare. Donec quis volutpat orci. Quisque nec ante ultricies magna dignissim varius. Donec scelerisque rhoncus congue. Integer luctus, lectus in rutrum interdum, tellus mi gravida risus, in consequat mi ante in nulla. Nulla eleifend vehicula lectus, gravida sodales augue venenatis a. Donec at dui urna, et dignissim quam. Mauris malesuada tincidunt arcu, vel molestie tellus molestie ut. Cras id urna metus, sit amet sagittis mauris.</p>
-                        <p><a href="#">Czytaj dalej</a></p>
+                        <p><a href="#">Czytaj dalej &rarr;</a></p>
                     </div>
                 </article>
 
                 <article class="post">
                     <header>
-                        <h2><a href="#" title="">Tytuł wpisu</a> <a href="#" class="comment_count">Komentarze (4)</a></h2>
-                        <span class="metadata">
+                        <h2 class="title"><a href="#" title="">Tytuł wpisu</a></h2>
+                        <small class="metadata">
                             21 marca 2012 @ <a href="#">Społeczeństwo</a>, <a href="#">Ciekawostki</a>. <a href="#">Edytuj</a>
-                        </span>
+                        </small>
                     </header>
                     <div class="content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum enim quis turpis hendrerit in lobortis ligula ornare. Donec quis volutpat orci. Quisque nec ante ultricies magna dignissim varius. Donec scelerisque rhoncus congue. Integer luctus, lectus in rutrum interdum, tellus mi gravida risus, in consequat mi ante in nulla. Nulla eleifend vehicula lectus, gravida sodales augue venenatis a. Donec at dui urna, et dignissim quam. Mauris malesuada tincidunt arcu, vel molestie tellus molestie ut. Cras id urna metus, sit amet sagittis mauris.</p>
-                        <p><a href="#">Czytaj dalej</a></p>
+                        <p><a href="#">Czytaj dalej &rarr;</a></p>
                     </div>
                 </article>
 
                 <article class="post">
                     <header>
-                        <h2><a href="#" title="">Tytuł wpisu</a> <a href="#" class="comment_count">Komentarze (4)</a></h2>
-                        <span class="metadata">
+                        <h2 class="title"><a href="#" title="">Tytuł wpisu</a></h2>
+                        <small class="metadata">
                             21 marca 2012 @ <a href="#">Społeczeństwo</a>, <a href="#">Ciekawostki</a>. <a href="#">Edytuj</a>
-                        </span>
+                        </small>
                     </header>
                     <div class="content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum enim quis turpis hendrerit in lobortis ligula ornare. Donec quis volutpat orci. Quisque nec ante ultricies magna dignissim varius. Donec scelerisque rhoncus congue. Integer luctus, lectus in rutrum interdum, tellus mi gravida risus, in consequat mi ante in nulla. Nulla eleifend vehicula lectus, gravida sodales augue venenatis a. Donec at dui urna, et dignissim quam. Mauris malesuada tincidunt arcu, vel molestie tellus molestie ut. Cras id urna metus, sit amet sagittis mauris.</p>
-                        <p><a href="#">Czytaj dalej</a></p>
+                        <p><a href="#">Czytaj dalej &rarr;</a></p>
                     </div>
                 </article>
 
                 <article class="post">
                     <header>
-                        <h2><a href="#" title="">Tytuł wpisu</a> <a href="#" class="comment_count">Komentarze (4)</a></h2>
-                        <span class="metadata">
+                        <h2 class="title"><a href="#" title="">Tytuł wpisu</a></h2>
+                        <small class="metadata">
                             21 marca 2012 @ <a href="#">Społeczeństwo</a>, <a href="#">Ciekawostki</a>. <a href="#">Edytuj</a>
-                        </span>
+                        </small>
                     </header>
                     <div class="content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum enim quis turpis hendrerit in lobortis ligula ornare. Donec quis volutpat orci. Quisque nec ante ultricies magna dignissim varius. Donec scelerisque rhoncus congue. Integer luctus, lectus in rutrum interdum, tellus mi gravida risus, in consequat mi ante in nulla. Nulla eleifend vehicula lectus, gravida sodales augue venenatis a. Donec at dui urna, et dignissim quam. Mauris malesuada tincidunt arcu, vel molestie tellus molestie ut. Cras id urna metus, sit amet sagittis mauris.</p>
-                        <p><a href="#">Czytaj dalej</a></p>
+                        <p><a href="#">Czytaj dalej &rarr;</a></p>
                     </div>
                 </article>
 
                 <article class="post">
                     <header>
-                        <h2><a href="#" title="">Tytuł wpisu</a> <a href="#" class="comment_count">Komentarze (4)</a></h2>
-                        <span class="metadata">
+                        <h2 class="title"><a href="#" title="">Tytuł wpisu</a></h2>
+                        <small class="metadata">
                             21 marca 2012 @ <a href="#">Społeczeństwo</a>, <a href="#">Ciekawostki</a>. <a href="#">Edytuj</a>
-                        </span>
+                        </small>
                     </header>
                     <div class="content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum enim quis turpis hendrerit in lobortis ligula ornare. Donec quis volutpat orci. Quisque nec ante ultricies magna dignissim varius. Donec scelerisque rhoncus congue. Integer luctus, lectus in rutrum interdum, tellus mi gravida risus, in consequat mi ante in nulla. Nulla eleifend vehicula lectus, gravida sodales augue venenatis a. Donec at dui urna, et dignissim quam. Mauris malesuada tincidunt arcu, vel molestie tellus molestie ut. Cras id urna metus, sit amet sagittis mauris.</p>
-                        <p><a href="#">Czytaj dalej</a></p>
+                        <p><a href="#">Czytaj dalej &rarr;</a></p>
                     </div>
                 </article>
 
                 <article class="post">
                     <header>
-                        <h2><a href="#" title="">Tytuł wpisu</a> <a href="#" class="comment_count">Komentarze (4)</a></h2>
-                        <span class="metadata">
+                        <h2 class="title"><a href="#" title="">Tytuł wpisu</a></h2>
+                        <small class="metadata">
                             21 marca 2012 @ <a href="#">Społeczeństwo</a>, <a href="#">Ciekawostki</a>. <a href="#">Edytuj</a>
-                        </span>
+                        </small>
                     </header>
                     <div class="content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum enim quis turpis hendrerit in lobortis ligula ornare. Donec quis volutpat orci. Quisque nec ante ultricies magna dignissim varius. Donec scelerisque rhoncus congue. Integer luctus, lectus in rutrum interdum, tellus mi gravida risus, in consequat mi ante in nulla. Nulla eleifend vehicula lectus, gravida sodales augue venenatis a. Donec at dui urna, et dignissim quam. Mauris malesuada tincidunt arcu, vel molestie tellus molestie ut. Cras id urna metus, sit amet sagittis mauris.</p>
-                        <p><a href="#">Czytaj dalej</a></p>
+                        <p><a href="#">Czytaj dalej &rarr;</a></p>
                     </div>
                 </article>
 
                 <article class="post">
                     <header>
-                        <h2><a href="#" title="">Tytuł wpisu</a> <a href="#" class="comment_count">Komentarze (4)</a></h2>
-                        <span class="metadata">
+                        <h2 class="title"><a href="#" title="">Tytuł wpisu</a></h2>
+                        <small class="metadata">
                             21 marca 2012 @ <a href="#">Społeczeństwo</a>, <a href="#">Ciekawostki</a>. <a href="#">Edytuj</a>
-                        </span>
+                        </small>
                     </header>
                     <div class="content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum enim quis turpis hendrerit in lobortis ligula ornare. Donec quis volutpat orci. Quisque nec ante ultricies magna dignissim varius. Donec scelerisque rhoncus congue. Integer luctus, lectus in rutrum interdum, tellus mi gravida risus, in consequat mi ante in nulla. Nulla eleifend vehicula lectus, gravida sodales augue venenatis a. Donec at dui urna, et dignissim quam. Mauris malesuada tincidunt arcu, vel molestie tellus molestie ut. Cras id urna metus, sit amet sagittis mauris.</p>
-                        <p><a href="#">Czytaj dalej</a></p>
+                        <p><a href="#">Czytaj dalej &rarr;</a></p>
                     </div>
                 </article>
 
                 <article class="post">
                     <header>
-                        <h2><a href="#" title="">Tytuł wpisu</a> <a href="#" class="comment_count">Komentarze (4)</a></h2>
-                        <span class="metadata">
+                        <h2 class="title"><a href="#" title="">Tytuł wpisu</a></h2>
+                        <small class="metadata">
                             21 marca 2012 @ <a href="#">Społeczeństwo</a>, <a href="#">Ciekawostki</a>. <a href="#">Edytuj</a>
-                        </span>
+                        </small>
                     </header>
                     <div class="content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum enim quis turpis hendrerit in lobortis ligula ornare. Donec quis volutpat orci. Quisque nec ante ultricies magna dignissim varius. Donec scelerisque rhoncus congue. Integer luctus, lectus in rutrum interdum, tellus mi gravida risus, in consequat mi ante in nulla. Nulla eleifend vehicula lectus, gravida sodales augue venenatis a. Donec at dui urna, et dignissim quam. Mauris malesuada tincidunt arcu, vel molestie tellus molestie ut. Cras id urna metus, sit amet sagittis mauris.</p>
-                        <p><a href="#">Czytaj dalej</a></p>
+                        <p><a href="#">Czytaj dalej &rarr;</a></p>
                     </div>
                 </article>
 
                 <article class="post">
                     <header>
-                        <h2><a href="#" title="">Tytuł wpisu</a> <a href="#" class="comment_count">Komentarze (4)</a></h2>
-                        <span class="metadata">
+                        <h2 class="title"><a href="#" title="">Tytuł wpisu</a></h2>
+                        <small class="metadata">
                             21 marca 2012 @ <a href="#">Społeczeństwo</a>, <a href="#">Ciekawostki</a>. <a href="#">Edytuj</a>
-                        </span>
+                        </small>
                     </header>
                     <div class="content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum enim quis turpis hendrerit in lobortis ligula ornare. Donec quis volutpat orci. Quisque nec ante ultricies magna dignissim varius. Donec scelerisque rhoncus congue. Integer luctus, lectus in rutrum interdum, tellus mi gravida risus, in consequat mi ante in nulla. Nulla eleifend vehicula lectus, gravida sodales augue venenatis a. Donec at dui urna, et dignissim quam. Mauris malesuada tincidunt arcu, vel molestie tellus molestie ut. Cras id urna metus, sit amet sagittis mauris.</p>
-                        <p><a href="#">Czytaj dalej</a></p>
+                        <p><a href="#">Czytaj dalej &rarr;</a></p>
                     </div>
                 </article>
+
+                <div class="navigation">
+                    <a href="" class="left">&larr; Nowsze wpisy</a>
+                    <a href="" class="right"> Starsze wpisy &rarr;</a>
+                </div>
 
             </div><!--/main_content-->
 
@@ -202,7 +207,7 @@
 
                 <div class="widget">
                     <header>
-                        <h3>Widżet tekstowy</h3>
+                        <h3 class="name">Widżet tekstowy</h3>
                     </header>
                     <div class="content">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum enim quis turpis hendrerit in lobortis ligula ornare. Donec quis volutpat orci.</p>
@@ -211,7 +216,7 @@
 
                 <div class="widget">
                     <header>
-                        <h3>Archiwum miesięczne</h3>
+                        <h3 class="name">Archiwum miesięczne</h3>
                     </header>
                     <div class="content">
                         <ul>
@@ -226,7 +231,7 @@
 
                 <div class="widget">
                     <header>
-                        <h3>Kalendarz</h3>
+                        <h3 class="name">Kalendarz</h3>
                     </header>
                     <div class="content">
                         <ul>
@@ -246,7 +251,7 @@
 
                 <div class="widget">
                     <header>
-                        <h3>Kategorie</h3>
+                        <h3 class="name">Kategorie</h3>
                     </header>
                     <div class="content">
                         <ul>
@@ -266,6 +271,52 @@
 
             </div><!--/sidebar-->
 
+        </section>
+
+        <section class="bottom_bar">
+            <div class="widget">
+                    <header>
+                        <h3 class="name">Widżet tekstowy</h3>
+                    </header>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum enim quis turpis hendrerit in lobortis ligula ornare. Donec quis volutpat orci.</p>
+                    </div>
+                </div><!--/widget-->
+
+                <div class="widget">
+                    <header>
+                        <h3 class="name">Archiwum miesięczne</h3>
+                    </header>
+                    <div class="content">
+                        <ul>
+                            <li><a href="#">Listopad 2012</a> (32)</li>
+                            <li><a href="#">Październik 2012</a> (21)</li>
+                            <li><a href="#">Wrzesień 2012</a> (9)</li>
+                            <li><a href="#">Sierpień 2012</a> (2)</li>
+                            <li><a href="#">Lipiec 2012</a> (6)</li>
+                        </ul>
+                    </div>
+                </div><!--/widget-->
+
+                <div class="widget">
+                    <header>
+                        <h3 class="name">Kalendarz</h3>
+                    </header>
+                    <div class="content">
+                        <ul>
+                            <li><a href="#">Internet</a> (20)
+                                <ul>
+                                    <li><a href="#">Aktualności</a> (12)</li>
+                                    <li><a href="#">Ciekawostki</a> (4)</li>
+                                    <li><a href="#">Informacje prasowe</a> (6)</li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Społeczeństwo</a> (32)</li>
+                            <li><a href="#">Muzyka</a> (21)</li>
+                            <li><a href="#">Literatura</a> (9)</li>
+                        </ul>
+                    </div>
+                </div><!--/widget-->
         </section>
 
         <footer class="footer">
