@@ -27,48 +27,46 @@
                 </form>
             </div>
 
-            <menu>
-                <ul class="menu" id="js_menu">
-                    <li><a href="#">Główna</a></li>
-                    <li><a href="#">Kategorie bloga</a>
-                        <ul>
-                            <li><a href="#">Internet</a>
-                                <ul>
-                                    <li><a href="#">Aktualności</a></li>
-                                    <li><a href="#">Ciekawostki</a></li>
-                                    <li><a href="#">Informacje prasowe</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Społeczeństwo</a></li>
-                            <li><a href="#">Muzyka</a></li>
-                            <li><a href="#">Literatura</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Archiwum miesięczne</a>
-                        <ul>
-                            <li><a href="#">Listopad 2012</a></li>
-                            <li><a href="#">Październik 2012</a></li>
-                            <li><a href="#">Wrzesień 2012</a></li>
-                            <li><a href="#">Sierpień 2012</a></li>
-                            <li><a href="#">Lipiec 2012</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Zagnieżdżone podstrony</a>
-                        <ul>
-                            <li><a href="#">Informacje</a>
-                                <ul>
-                                    <li><a href="#">O autorze</a></li>
-                                    <li><a href="#">Współpraca</a></li>
-                                    <li><a href="#">Kontakt</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Nietypowa podstrona</a></li>
-                            <li><a href="#">Link zewnętrzny</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Link zewnętrzny</a></li>
-                </ul>
-            </menu>
+            <ul class="menu" id="js_menu">
+                <li><a href="#">Główna</a></li>
+                <li><a href="#">Kategorie bloga</a>
+                    <ul>
+                        <li><a href="#">Internet</a>
+                            <ul>
+                                <li><a href="#">Aktualności</a></li>
+                                <li><a href="#">Ciekawostki</a></li>
+                                <li><a href="#">Informacje prasowe</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Społeczeństwo</a></li>
+                        <li><a href="#">Muzyka</a></li>
+                        <li><a href="#">Literatura</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Archiwum miesięczne</a>
+                    <ul>
+                        <li><a href="#">Listopad 2012</a></li>
+                        <li><a href="#">Październik 2012</a></li>
+                        <li><a href="#">Wrzesień 2012</a></li>
+                        <li><a href="#">Sierpień 2012</a></li>
+                        <li><a href="#">Lipiec 2012</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Zagnieżdżone podstrony</a>
+                    <ul>
+                        <li><a href="#">Informacje</a>
+                            <ul>
+                                <li><a href="#">O autorze</a></li>
+                                <li><a href="#">Współpraca</a></li>
+                                <li><a href="#">Kontakt</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Nietypowa podstrona</a></li>
+                        <li><a href="#">Link zewnętrzny</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Link zewnętrzny</a></li>
+            </ul>
 
             <div class="header_img">
                 <img src="img/header_img.jpg" height="250" width="960" alt="">
@@ -234,18 +232,47 @@
                         <h3 class="name">Kalendarz</h3>
                     </header>
                     <div class="content">
-                        <ul>
-                            <li><a href="#">Internet</a> (20)
-                                <ul>
-                                    <li><a href="#">Aktualności</a> (12)</li>
-                                    <li><a href="#">Ciekawostki</a> (4)</li>
-                                    <li><a href="#">Informacje prasowe</a> (6)</li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Społeczeństwo</a> (32)</li>
-                            <li><a href="#">Muzyka</a> (21)</li>
-                            <li><a href="#">Literatura</a> (9)</li>
-                        </ul>
+                        <table id="wp-calendar">
+                            <caption>Listopad 2012</caption>
+                            <thead>
+                            <tr>
+                                <th scope="col" title="poniedziałek">P</th>
+                                <th scope="col" title="wtorek">W</th>
+                                <th scope="col" title="środa">Ś</th>
+                                <th scope="col" title="czwartek">C</th>
+                                <th scope="col" title="piątek">P</th>
+                                <th scope="col" title="sobota">S</th>
+                                <th scope="col" title="niedziela">N</th>
+                            </tr>
+                            </thead>
+
+                            <tfoot>
+                            <tr>
+                                <td colspan="3" id="prev"><a href="http://lukempl.wordpress.com/2008/03/" title="Zobacz wpisy opublikowane w Marzec 2008">&laquo; mar</a></td>
+                                <td class="pad">&nbsp;</td>
+                                <td colspan="3" id="next" class="pad">&nbsp;</td>
+                            </tr>
+                            </tfoot>
+
+                            <tbody>
+                            <tr>
+                                <td colspan="3" class="pad">&nbsp;</td><td>1</td><td>2</td><td>3</td><td>4</td>
+                            </tr>
+                            <tr>
+                                <td id="today">5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td>
+                            </tr>
+                            <tr>
+                                <td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td>
+                            </tr>
+                            <tr>
+                                <td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td>
+                            </tr>
+                            <tr>
+                                <td>26</td><td>27</td><td>28</td><td>29</td><td>30</td>
+                                <td class="pad" colspan="2">&nbsp;</td>
+                            </tr>
+                            </tbody>
+                            </table>
                     </div>
                 </div><!--/widget-->
 
