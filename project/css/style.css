@@ -71,6 +71,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight:bold;
+    margin-bottom:20px;
 }
 
 h1 {
@@ -99,9 +100,48 @@ h6 {
 
 /* Typografia */
 
-p, ul, ol {
-    margin:0 0 1.5em;
+b, strong {
+    font-weight:bold;
+}
+
+i, em {
+    font-style:italic;
+}
+
+p, ul, ol, blockquote {
+    margin:0 0 2em;
     text-align:justify;
+}
+
+big {
+    font-size:125%;
+}
+
+small {
+    font-size:50%;
+    opacity:0.7;
+}
+
+acronym, abbr {
+    cursor:help;
+    border-bottom:1px dotted;
+}
+
+code {
+    display:block;
+    font-family:monospace;
+    margin: 0 0 2em;
+}
+
+kbd {
+    padding:2px 5px;
+    background:#bbb;
+}
+
+p code,
+li code,
+blockquote code {
+    display:inline;
 }
 
 blockquote {}
@@ -130,6 +170,35 @@ small {
     float:left;
 }
 
+.content ul {
+    list-style:disc;
+}
+
+.content ul ul {
+    list-style:circle;
+}
+
+.content ol {
+    list-style:decimal;
+}
+
+.content blockquote {
+    border-left:1px dotted #999;
+    padding:20px 30px 20px;
+    font-style:italic;
+    color:#666;
+}
+
+.content blockquote cite {
+    font-weight:bold;
+}
+
+.content li {
+    margin-left:30px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
 .sidebar {
     width:300px;
     padding:30px 30px 20px 0;
@@ -156,6 +225,11 @@ small {
 .top .header {
     padding:20px;
     float:left;
+}
+
+.top .header .site_logo {
+    font-size:36px;
+    font-weight:bold;
 }
 
 
@@ -388,4 +462,34 @@ via: http://designmodo.com/css3-dropdown-menu/ */
     width:240px;
     float:left;
     margin-left:30px;
+}
+
+/* Kalendarz */
+
+#wp-calendar {
+    width:100%;
+    text-align:right;
+}
+
+#wp-calendar caption {
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+#wp-calendar th,
+#wp-calendar td {
+    padding:4px 0;
+}
+
+#wp-calendar thead tr {
+    border-bottom:2px solid #000;
+    font-weight:bold;
+}
+
+#wp-calendar tbody tr {
+    border-bottom:1px solid #999;
+}
+
+#wp-calendar #prev {
+    text-align:left;
 }
