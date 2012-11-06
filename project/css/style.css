@@ -152,6 +152,56 @@ small {
     font-size:0.8em;
 }
 
+/* Formularze */
+
+input[type="text"],
+input[type="password"],
+textarea {
+    border: 1px solid #999;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    outline: none;
+    padding: 5px 6px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.1s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.1s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.1s;
+    transition: border linear 0.2s, box-shadow linear 0.1s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: rgba(0, 145, 0, 1);
+    outline: 0;
+    outline: thin dotted \9;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 145, 0, 0.6);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 145, 0, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 145, 0, 0.6);
+}
+
+input[type="submit"] {
+    background:#009100;
+    border:0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    color:#fff;
+    font-size:13px;
+    padding:6px 16px;
+    cursor:pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    opacity:0.9;
+}
+
+
 /* Szkielet motywu */
 
 .wrapper {
@@ -240,50 +290,6 @@ small {
     margin-right:30px;
     float:right;
 }
-
-.top .search_form input[type="text"] {
-    border: 1px solid #999;
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    outline: none;
-    padding: 5px 6px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-    -webkit-transition: border linear 0.2s, box-shadow linear 0.1s;
-    -moz-transition: border linear 0.2s, box-shadow linear 0.1s;
-    -o-transition: border linear 0.2s, box-shadow linear 0.1s;
-    transition: border linear 0.2s, box-shadow linear 0.1s;
-}
-
-.top .search_form input[type="text"]:focus {
-    border-color: rgba(0, 145, 0, 1);
-    outline: 0;
-    outline: thin dotted \9;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 145, 0, 0.6);
-    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 145, 0, 0.6);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 145, 0, 0.6);
-}
-
-.top .search_form input[type="submit"] {
-    background:#009100;
-    border:0;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    border-radius: 5px;
-    color:#fff;
-    font-size:13px;
-    padding:6px 16px;
-    cursor:pointer;
-}
-
-.top .search_form input[type="submit"]:hover,
-.top .search_form input[type="submit"]:focus {
-    opacity:0.9;
-}
-
 
 /* Rozwijane menu - autor: Valeriu Timbuc
 via: http://designmodo.com/css3-dropdown-menu/ */
@@ -431,6 +437,26 @@ via: http://designmodo.com/css3-dropdown-menu/ */
 
 .navigation .right {
     float:right;
+}
+
+/* Komentarze */
+
+/* Formularz dodawania komentarza */
+
+.add_comment form {
+    margin-bottom:20px;
+}
+
+.add_comment form dl {
+    margin-bottom:20px;
+}
+
+.add_comment input[type="text"] {
+    width:300px;
+}
+
+.add_comment textarea {
+    width:450px;
 }
 
 /* Widżety paska bocznego */
